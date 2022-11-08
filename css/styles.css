@@ -12,7 +12,9 @@
   background-color: rgb(255, 253, 253);
   height: 40rem;
   border-radius: .5em;
-  margin: 0px 40px 0px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 99%;
   text-align: center;
   
 }
