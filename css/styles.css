@@ -1,0 +1,180 @@
+
+  body {
+    background-color: #a3e2ff;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2em;
+    font-family: arial;
+  }
+
+.card{
+  background-color: rgb(255, 253, 253);
+  height: 40rem;
+  border-radius: .5em;
+  margin: 0px 40px 0px 10px;
+  text-align: center;
+  
+}
+
+h2{
+  display: inline-block;
+  padding-top: 15px;
+  
+}
+
+.number{
+  display: none;
+}
+
+.gift{
+  text-align: center;
+}
+.gift img{
+  position: relative;
+  bottom: 8rem;
+  max-width: 85%;
+  height: auto;
+}
+
+.ardilla{
+  position: absolute;
+  top: 23rem;
+  left: 20rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.ardilla2{
+  position: absolute;
+  top: 28rem;
+  left: 60rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.globo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+/* WAVE TEXT */
+.WaveText{
+  font-family: 'Archivo', sans-serif;
+  margin-top: 0.6rem;
+  font-size: 50px;
+  text-align: center;
+}
+
+.WaveText span{
+  display: inline-block;
+  -webkit-animation: wave-text 1s ease-in-out infinite;
+  animation: wave-text 1s ease-in-out infinite;
+}
+
+.WaveText span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.WaveText span:nth-of-type(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.WaveText span:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.WaveText span:nth-of-type(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.WaveText span:nth-of-type(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes wave-text {
+
+  00%{
+    transform: translateY(0em);
+  }
+
+  60%{
+    transform: translateY(-0.6em);
+  }
+
+  100%{
+    transform: translateY(0em);
+  }
+}
+
+@keyframes wave-text {
+
+  00%{
+    transform: translateY(0em);
+  }
+
+  60%{
+    transform: translateY(-0.6em);
+  }
+
+  100%{
+    transform: translateY(0em);
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  
+  h2{
+    font-weight: bold;
+  }
+
+  .WaveText{
+    margin-top: 70px;
+  }
+
+ .card{
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 92%;
+  height: max-content;
+ }
+
+ .number{
+  color: rgb(52, 154, 212);
+  text-align: center;
+  display: inline-block;
+  font-size: 80px;
+  font-family: 'Archivo', sans-serif;
+  margin-top: 20px;
+ }
+  .gift{
+    display: none;
+  }
+
+  .globo{
+    display: none;
+
+  }
+  .ardilla{
+    width: 30%;
+    height: 10%;
+    top: 18rem;
+    left: 1%;
+  }
+  .ardilla2{
+    width: 30%;
+    height: 10%;
+    top: 20rem;
+    left: 70%;
+  }
+
+}
